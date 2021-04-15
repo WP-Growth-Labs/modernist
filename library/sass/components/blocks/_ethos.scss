@@ -1,0 +1,97 @@
+.wp-block,
+.entry-content {
+
+	.block-ethos {
+		background: #000;
+		display: flex;
+		margin-bottom: 4rem;
+
+		* {
+			color: #fff;
+		}
+
+		@include media('<tablet') {
+			display: block;
+			padding: 0 2rem;
+		}
+
+		.ethos-image {
+			flex: 0 0 auto;
+
+			img {
+				display: block;
+			}
+
+			@include media('<tablet') {
+				margin-bottom: 1rem;
+			}
+		}
+
+		.ethos-content-wrapper {
+			display: flex;
+			position: relative;
+			padding : 2rem 0 0 1rem;
+
+			@include media('<tablet') {
+				display: block;
+				padding: 2rem 0 0;
+			}
+
+			.ethos-counter {
+				width: 100%;
+				height: 1rem;
+				position: absolute;
+				top: 0;
+				counter-increment: ethos-counter 01;
+
+				&:before {
+					content: "." counter(ethos-counter, decimal-leading-zero);
+					width: 2rem;
+					line-height: 1rem;
+					position: absolute;
+					color: #fff;
+				}
+
+				&:after {
+					width: calc(100% - 3rem);
+					top: 0.5rem;
+					position: absolute;
+					border-bottom: 1px solid #fff;
+					content: "";
+					left: 2rem;
+				}
+			}
+
+			div {
+				flex: 1 50%;
+			}
+
+			.ethos-title {
+				
+				h2 {
+					margin: 0;
+					color: #fff;
+					font-size: 2.5rem;
+
+					@include media('<tablet') {
+						font-size: 1.5rem;
+						margin-bottom: 0.5rem;
+					}
+				}
+			}
+
+			.ethos-content {
+
+				p {
+					font-size: 1.125rem;
+					color: #fff !important;
+					margin: 0;
+
+					@include media('<tablet') {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

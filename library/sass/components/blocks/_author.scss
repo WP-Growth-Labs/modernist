@@ -1,0 +1,93 @@
+.wp-block,
+.entry-content,
+.entry-footer {
+
+	.block-author-box {
+		@include outer-container(48rem);
+		display: flex;
+		margin-top: 4rem;
+
+		@include media('<tablet') {
+			display: block;
+			padding: 0 2rem;
+		}
+
+		.author-headshot {
+			flex: 0 0 150px;
+			margin-bottom: 1rem;
+
+			@include media('<tablet') {
+				align-items: center;
+				display: flex;
+			}
+
+			.headshot-wrapper {
+				overflow: hidden;
+				border-radius: 50%;
+				position: relative;
+				
+				margin-right: 2rem;
+
+				@include media('<tablet') {
+					flex: 0 33%;
+				}
+
+				&:before {
+					content: "";
+					display: block;
+					padding-top: 100%;
+				}
+
+				img {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+					top: 0;
+					left: 0;
+				}
+			}
+
+			.author-info {
+				display: none;
+
+				@include media('<tablet') {
+					display: block;
+				}
+			}
+		}
+
+		.author-content {
+
+			@include media('<tablet') {
+				
+				.author-info {
+					display: none;
+				}
+			}
+			
+		}
+
+		.author-info {
+
+			h3 {
+				margin: 0;
+				font-size: 1.5rem;
+			}
+
+			p.title {
+				margin-top: 0;
+			}
+
+			@include media('<tablet') {
+				h3 {
+					font-size: 1rem;
+				}
+
+				p.title {
+					font-size: 0.875rem;
+				}
+			}
+		}
+	}
+}

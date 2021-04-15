@@ -1,0 +1,23 @@
+a {
+	color: #007AFF;
+	text-decoration: none;
+
+	&:visited {
+		color: #007AFF;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: underline;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

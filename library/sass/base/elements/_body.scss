@@ -1,0 +1,50 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	background: #fff; // Fallback for when there is no custom background color defined.
+	margin-top: 4rem;
+
+	#page {
+		display: flex;
+		min-height: calc(100vh - 4rem);
+		flex-direction: column;
+
+		main {
+			flex: 1;
+			width: 100%;
+
+			.animate-in {			
+				opacity: 0;
+				transform: translateY(150px);
+			}
+
+			.animate-in-extended,
+			.blocks-gallery-item {
+				opacity: 0;
+				transform: translateY(300px);
+			}
+
+			.animated-in {
+				opacity: 0;
+				transform: translateY(150px);
+				animation: animate-in 0.8s ease forwards;
+			}
+
+			@keyframes animate-in {
+				to { transform: translateY(0); opacity: 1; }
+			}
+		}
+	}
+
+	.page {
+		
+		&.dark {
+			background: #000;
+		}
+	}
+}

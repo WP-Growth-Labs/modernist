@@ -1,0 +1,185 @@
+.wp-block,
+.entry-content {
+	@include outer-container(72rem);
+
+	&.narrow-content {
+		@include outer-container(48rem);
+
+		.alignwide {
+
+			@include media('<tablet') {
+				margin-left: -12.5rem;
+				margin-right: -12.5rem;
+			}
+		}
+	}
+
+	.narrow-content {
+		@include outer-container(48rem);
+	}
+
+	> * {
+		@include media('<tablet') {
+			padding-right: 2rem;
+			padding-left: 2rem;			
+		}
+	}
+
+	> ul {
+		@include media('<tablet') {
+			padding-left: 3rem;			
+		}
+	}
+
+	.box-shadow {
+		box-shadow: 0 0 .5rem 0px rgba(131, 131, 131 , 0.5);
+		margin-bottom: 1rem;
+	}
+
+	.box-shadow-light {
+		box-shadow: 0 0 2rem -1rem rgba(#000 , 0.25);
+		margin-bottom: 1rem;
+	}
+
+	figure {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+		@include outer-container(72rem);
+
+		img,
+		video,
+		iframe {
+			display: block;
+			margin: 0;
+			max-width: 100%;
+			width: 100%;
+		}
+
+		figcaption {
+			margin-bottom: 0;
+		}
+
+		&.alignwide {
+			@include outer-container(72rem);
+			width: 100vw;
+		}
+
+		&.alignfull {
+			@include outer-container(100%);
+
+			img,
+			iframe {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.no-offset {
+		margin: 0 auto;
+
+		figure.aligncenter {
+			margin: 0 auto;
+		}
+	}
+
+	hr.is-style-dots {
+
+		&:before {
+			opacity: 0.75;
+			line-height: 1rem;
+			font-size: 1.25rem;
+			content: "..............................";
+			letter-spacing: 0;
+			display: block;
+			margin-top: -0.5rem;
+		}
+	}
+
+
+	> blockquote.wp-block-quote.is-style-large {
+		@include outer-container(60rem);
+		padding: 5rem 3rem 4rem;
+		//margin-bottom: 5.75rem;
+
+		@include media('<tablet') {
+			padding: 2rem;
+			margin-right: 2rem;
+			margin-left: 2rem;
+		}
+	}
+
+	> blockquote.wp-block-quote.is-style-large {
+
+		p, cite {
+			@include outer-container(48rem);
+			color: #000;
+		}
+
+		cite {
+			font-size: 1.125rem;
+			display: block;
+			text-align: left;
+			font-style: normal;
+			//margin-bottom: 1.5rem;
+
+			@include media('<tablet') {
+				font-size: 1rem;
+			}
+		}
+	}
+
+	blockquote.wp-block-quote.is-style-large {
+		
+		p {
+			font-size: 1.5rem;
+
+			@include media('<tablet') {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+#page.dark {
+
+	.entry-content {
+		
+		*:not(.button, a) {
+			color: #fff;
+		}
+
+		.light {
+
+			*:not(a, .button) {
+				color: #333;
+			}
+		}
+	}
+}
+
+body.block-editor-page .edit-post-visual-editor {
+
+	.editor-styles-wrapper {
+
+		> blockquote.wp-block-quote.is-style-large {
+			@include outer-container(60rem);
+			padding: 5rem 3rem 4rem;
+
+			.textbox {
+				@include outer-container(48rem);
+				color: #000;
+				font-size: 1.5rem;
+
+				&.wp-block-quote__citation {
+					font-size: 1.125rem;
+				}
+			}
+		}
+	}
+}

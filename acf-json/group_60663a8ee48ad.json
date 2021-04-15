@@ -1,0 +1,84 @@
+{
+    "key": "group_60663a8ee48ad",
+    "title": "Block - Lottie",
+    "fields": [
+        {
+            "key": "field_60663a9d97ecf",
+            "label": "Lottie File",
+            "name": "lottie_file",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".json"
+        },
+        {
+            "key": "field_60663abf97ed0",
+            "label": "Loop",
+            "name": "lottie_loop",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6066602e09ce2",
+            "label": "Mode",
+            "name": "lottie_mode",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "autoplay": "Autoplay",
+                "hover": "Hover"
+            },
+            "allow_null": 0,
+            "default_value": "autoplay",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/ms-lottie"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1617322093
+}

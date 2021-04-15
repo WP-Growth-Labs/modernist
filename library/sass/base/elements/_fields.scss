@@ -1,0 +1,36 @@
+#page,
+.edit-post-visual-editor.editor-styles-wrapper {
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],
+	textarea {
+		background: $gray-pastel;
+		border: 1px solid $gray-tint;
+		border-radius: 0.25rem;
+		padding: 0.25rem;
+
+		&:focus {
+			color: #000;
+		}
+	}
+
+	select {
+		border: 1px solid $gray-tint;
+	}
+
+	textarea {
+		width: 100%;
+	}
+}

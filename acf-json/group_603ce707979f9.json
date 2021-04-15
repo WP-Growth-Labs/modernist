@@ -1,0 +1,95 @@
+{
+    "key": "group_603ce707979f9",
+    "title": "Block - Image Row",
+    "fields": [
+        {
+            "key": "field_603ce707a4c01",
+            "label": "Color Scheme",
+            "name": "scheme",
+            "type": "button_group",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "allow_null": 0,
+            "default_value": "light",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_603ce707a85e1",
+            "label": "Row Width",
+            "name": "width",
+            "type": "button_group",
+            "instructions": "Define if the width of the row is wide (1140px) or narrow (720px).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "wide": "Wide",
+                "narrow": "Narrow"
+            },
+            "allow_null": 0,
+            "default_value": "wide",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_603ce71eeca0f",
+            "label": "Images",
+            "name": "images",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "insert": "append",
+            "library": "all",
+            "min": "",
+            "max": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/image-row"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1614604871
+}

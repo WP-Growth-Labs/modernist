@@ -1,0 +1,35 @@
+.wp-block,
+.entry-content {
+
+	section.wp-block-uagb-section.uagb-section__wrap,
+	div.wp-block-uagb-section.uagb-section__wrap {
+		width: 100vw;
+		max-width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+
+	    .uagb-section__inner-wrap {
+	    	@include outer-container(72rem);
+	    }
+	}
+
+	.wp-block-uagb-section.uagb-section__wrap {
+
+		&.light {
+
+			* {
+				color: #000;
+			}
+		}
+
+		&.dark {
+
+			* {
+				color: #fff;
+			}
+		}
+	}
+}

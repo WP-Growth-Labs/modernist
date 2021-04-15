@@ -1,0 +1,63 @@
+body.page_our-ethos {
+	
+	main#primary {
+		
+		.entry-content {
+
+			.block-page-title {
+
+				h1.entry-title {
+					text-align: left;
+				}
+			}
+
+			.block-ethos {
+
+				.ethos-image {
+					max-width: 10rem;
+					margin-right: 1.5rem;
+				}
+
+				.ethos-content-wrapper {
+					.ethos-title {
+						margin-right: 2rem;
+					}
+
+					.ethos-description {
+						font-size: 1.125rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+body.admin_page_our-ethos {
+
+	.wp-block {
+		@include outer-container(42rem);
+
+		.block-page-title {
+
+			h1.entry-title {
+				text-align: left;
+			}
+		}
+
+		.block-ethos {
+
+			.ethos-image {
+				max-width: 10rem;
+				margin-right: 1.5rem;
+			}
+
+			.ethos-title {
+				margin-right: 2rem;
+			}
+
+			.ethos-description {
+				font-size: 1.125rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+// Center block
+@mixin center-block {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Outer Container
+@mixin outer-container($local-max-width: $max-width) {
+	max-width: $local-max-width;
+	margin: {
+		left: auto;
+		right: auto;
+  	}
+  	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns_margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+
+@function set-color($color) {
+    @if (lightness($color) > 40) {
+      @return #000;
+    }
+    @else {
+      @return #FFF;
+    }
+}
+
+
+// ----
+// libsass (v3.2.5)
+// ----
+
+/// Style the placeholder attribute of input[type="text"] fields.
+/// This mixin can be applied globally or on specific text fields
+/// @example
+/// // all input and textareas
+/// @include inputPlaceholder() {
+///     color: red;
+///     font-weight: 300;
+///     padding-top: 5px;
+///  }
+/// // just textareas
+/// textarea {
+///     @include inputPlaceholder() {
+///         padding: 15px;
+///     }
+/// }
+/// 
+@mixin inputPlaceholder() {
+    $selector: '';
+    $prefixes: (
+        moz: "::-moz",
+        webkit: "::-webkit",
+        ie: ":-ms"
+    );
+    @each $prop, $value in $prefixes {
+        @if $prop != "moz" {
+            $selector: #{$value}-input-placeholder;
+        } @else {
+            $selector: #{$value}-placeholder;
+        }
+        @if & {
+            &#{$selector} {
+                @content;
+            }
+        } @else {
+            #{$selector} {
+                @content;
+            }
+        }
+    }
+    &::placeholder {
+      @content;
+    }
+}

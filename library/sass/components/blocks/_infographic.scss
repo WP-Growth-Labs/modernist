@@ -1,0 +1,142 @@
+.wp-block,
+.entry-content,
+.entry-footer {
+
+	.block-infographic {
+		@include outer-container(72rem);
+		
+		.infographic-wrapper {
+			position: relative;
+
+			.lottie-background {
+				padding: 1.5rem 0;
+				width: 100%;
+
+				@include media('<tablet') {
+					display: none;
+				}
+			}
+
+			.ig-columns {
+				position: absolute;
+				top: 0%;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding: 0 calc(10% + 4px);
+				display: flex;
+				justify-content: space-between;
+
+				@include media('<tablet') {
+					position: relative;
+					padding: 0;
+					display: block;
+					margin-bottom: 2.5rem;
+
+				}
+
+				.ig-col {
+					flex: 0 calc(20% - 2px);
+
+					@include media('<tablet') {
+						padding: 0 2rem;
+					}
+
+					.ig-lottie-wrapper-col {
+						position: relative;
+						margin: 1rem;
+						border-radius: 50%;
+
+						.ig-lottie-inner {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%,-50%) scale(1.375);
+						}
+
+						&:before {
+							display: block;
+							content: "";
+							padding-top: 100%;
+						}
+					}
+
+					.text-col {
+						text-align: center;
+
+						p.heading {
+							font-size: 1.25rem;
+							margin: 0;
+						}
+
+						p.text {
+							padding: 0 2.125rem;
+							line-height: 1;
+							opacity: 0;
+							visibility: hidden;
+							transition: all 0.5s ease-in;
+
+							@include media('<tablet') {
+								opacity: 1;
+								visibility: visible;
+							}
+						}
+					}
+
+					&.odd {
+						align-self: flex-start;
+						padding-top: 3rem;
+
+						.ig-lottie-wrapper-col {
+							background: #FA4539;
+						}
+
+						@include media('<tablet') {
+							padding-top: 0;
+						}
+					}
+
+					&.even {
+						align-self: flex-end;
+						padding-bottom: 3.75rem;
+
+						@include media('<tablet') {
+							padding-bottom: 0;
+						}
+
+						.ig-lottie-wrapper-col {
+							background: #FEC7C4;
+						}
+
+						.desktop {
+
+							@include media('<tablet') {
+								display: none;
+							}
+						}
+
+						.mobile {
+							display: none;
+
+							@include media('<tablet') {
+								display: block;
+							}
+						}
+					}
+
+					&:hover {
+
+						.text-col {
+
+							p.text {
+								opacity: 1;
+								visibility: visible;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}

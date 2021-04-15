@@ -1,0 +1,33 @@
+.wp-block-gallery {
+	margin-bottom: 1.5rem;
+	
+
+	.blocks-gallery-grid {
+		display: grid;
+		grid-gap: 1.5rem;
+
+		.blocks-gallery-item {
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+
+
+// Loops to enumerate the classes for gallery columns.
+@for $i from 2 through 9 {
+
+	.wp-block-gallery.columns-#{$i} {
+
+		.blocks-gallery-grid {
+			grid-template-columns: repeat($i, 1fr);
+		}
+	}
+}
+
+.gallery-caption {
+	display: block;
+}

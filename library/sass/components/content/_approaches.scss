@@ -1,0 +1,15 @@
+.wp-block,
+.entry-content {
+
+	section.wp-block-uagb-section.uagb-section__wrap.window-width,
+	div.wp-block-uagb-section.uagb-section__wrap.window-width {
+
+		.uagb-section__inner-wrap {
+			max-width: unset;
+
+			figure {
+				max-width: unset;
+			}
+		}
+	}
+}

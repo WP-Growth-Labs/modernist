@@ -1,0 +1,73 @@
+.wp-block,
+.entry-content {
+
+	.block-giant-text {
+		background: #fff;
+		padding: 3.5rem 1rem 4.5rem;
+
+		@include media('<tablet') {
+			padding: 1rem 2rem 2rem;
+		}
+
+		.giant-text-inner {
+			@include outer-container(48rem);
+			font-size: 4rem;
+			font-family: $serif;
+
+			@include media('<tablet') {
+				font-size: 1.5rem;
+			}
+
+			p {
+				margin-top: 0;
+				line-height: 1.125;
+			}
+		}
+
+		&.full-width {
+			width: 100vw;
+			max-width: 100vw;
+			position: relative;
+			left: 50%;
+			right: 50%;
+			margin-left: -50vw;
+			margin-right: -50vw;
+		}
+
+		&.dark {
+			background: #000;
+			padding-top: 4.5rem;
+
+			@include media('<tablet') {
+				padding-top: 2rem;
+			}
+
+			.giant-text-inner {
+				color: #fff;
+			}
+		}
+
+		&.pad-sm-tp {
+			padding-top: 1rem;
+		}
+
+		&.pad-sm-bt {
+			padding-bottom: 1rem;
+		}
+
+		&.pad-sm {
+			padding: 1rem;
+		}
+
+		&:first-child {
+			
+			&:not(.pad-sm, .pad-sm-tp) {
+				padding-top: 4.5rem;
+
+				@include media('<tablet') {
+					padding-top: 2rem;
+				}
+			}
+		}
+	}
+}

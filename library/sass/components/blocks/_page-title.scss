@@ -1,0 +1,37 @@
+.wp-block,
+.entry-content {
+
+	.block-page-title {
+		@include outer-container(58rem);
+		margin: 3rem auto 4rem;
+
+		@include media('<tablet') {
+			margin: 1rem auto 2rem;
+			padding: 2rem 2rem 0;
+		}
+
+		h1.entry-title {
+			line-height: normal;
+			font-size: 4rem;
+			font-weight: normal;
+			text-align: center;
+
+			@include media('<tablet') {
+				font-size: 1.75rem;
+
+				br:not(.force) {
+					display: none;
+				}
+			}
+		}
+
+		&.alignleft {
+			float: none;
+			@include outer-container(100%);
+
+			h1.entry-title {
+				text-align: left;
+			}
+		}
+	}
+}

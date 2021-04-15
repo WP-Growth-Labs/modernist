@@ -1,0 +1,77 @@
+{
+    "key": "group_605b61e131ed4",
+    "title": "MS Post Settings",
+    "fields": [
+        {
+            "key": "field_605b61ee6263b",
+            "label": "Post Color Scheme",
+            "name": "post_color_scheme",
+            "type": "color_picker",
+            "instructions": "Choose a Primary Color for this post. A secondary, lighter color will be automatically calculated.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#333"
+        },
+        {
+            "key": "field_605c963196764",
+            "label": "Top H2 optional",
+            "name": "top_h2_optional",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_605c963c96765",
+            "label": "Bottom CTA Text",
+            "name": "bottom_cta_text",
+            "type": "textarea",
+            "instructions": "Get In Touch CTA Section Heading:",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Modernist can help you harness the power of design to transform your organization.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1616680636
+}

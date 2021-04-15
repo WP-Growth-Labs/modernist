@@ -1,0 +1,59 @@
+.edit-post-visual-editor.editor-styles-wrapper,
+.entry-content {
+	p {
+		margin: 0 auto;
+		margin-bottom: 1.5rem;
+	}
+
+	strong {
+		
+	}
+
+	dfn,
+	cite,
+	em,
+	i {
+		font-style: italic;
+	}
+
+	blockquote {
+		margin: 0 1.5rem;
+	}
+
+	address {
+		margin: 0 0 1.5rem;
+	}
+
+	pre {
+		background: $gray-pastel;
+		font-family: $code;
+		line-height: 1.75rem;
+		margin-bottom: 1.625rem;
+		max-width: 100%;
+		overflow: auto;
+		padding: 1.625rem;
+	}
+
+	code,
+	kbd,
+	tt,
+	var {
+		font-family: $code;
+	}
+
+	abbr,
+	acronym {
+		border-bottom: 1px dotted $gray-tint;
+		cursor: help;
+	}
+
+	mark,
+	ins {
+		background: $gray-tint;
+		text-decoration: none;
+	}
+
+	big {
+		font-size: 125%;
+	}
+}

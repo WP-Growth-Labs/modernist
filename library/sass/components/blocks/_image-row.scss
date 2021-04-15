@@ -1,0 +1,68 @@
+.wp-block,
+.entry-content {
+
+	.block-image-row {
+		background: #fff;
+		padding: 2rem 1rem;
+		width: 100vw;
+		max-width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+
+		.image-row-inner {
+			@include outer-container(48rem);
+			font-size: 4rem;
+			font-family: $serif;
+			display: flex;
+			align-items: center;
+
+			@include media('<tablet') {
+				flex-wrap: wrap; 
+			}
+
+			.image-wrap {
+				border-right: 1px solid #fff;
+				padding: 1rem 2rem;
+				text-align: center;
+				flex: 1 auto;
+				align-items: center;
+				
+				@include media('<tablet') {
+					padding: 1rem;
+					flex: 1 50%;
+					border-right: none;
+				}
+
+				img {	
+					height: auto;
+					width: auto;
+					max-width: 100%;
+					margin: 0 auto;
+					object-fit: contain;
+				}
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+
+		&.wide {
+
+			.image-row-inner {
+				@include outer-container(72rem);
+			}
+		}
+
+		&.dark {
+			background: #000;
+
+			.giant-text-inner {
+				color: #fff;
+			}
+		}
+	}
+}

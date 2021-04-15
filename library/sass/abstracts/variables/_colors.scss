@@ -1,0 +1,73 @@
+:root {
+	--primary-color: #1C475C;
+	--primary-color-shade: #203544;
+	--primary-color-shadow: #203544;
+	--primary-color-tint: #1F4A60;
+	--primary-color-pastel: #1F4A60;
+
+	--secondary-color: #071D2C;
+	--secondary-color-shade: #071D2C;
+	--secondary-color-shadow: #071D2C;
+	--secondary-color-tint: #071D2C;
+	--secondary-color-pastel: #071D2C;
+
+	--accent-color: #03d07f;
+	--accent-color-shade: #01A162;
+	--accent-color-shadow: #333;
+	--accent-color-tint: #03d07f;
+	--accent-color-pastel: #03d07f;
+
+	--gray: #aaa;
+	--gray-shade: #777;
+	--gray-shadow: #333;
+	--gray-tint: #ddd;
+	--gray-pastel: #f0f0f0;
+
+	--black: #000;
+	--white: #fff;
+
+	--scheme-light-color: #f2f2f2;
+	--scheme-dark-color: #333;
+	--scheme-text-color: #fff;
+}
+
+$primary: var(--primary-color);
+$primary-shade: var(--primary-color-shade);
+$primary-shadow: var(--primary-color-shadow);
+$primary-tint: var(--primary-color-tint);
+$primary-pastel: var(--primary-color-pastel);
+
+$secondary: var(--secondary-color);
+$secondary-shade: var(--secondary-color-shade);
+$secondary-shadow: var(--secondary-color-shadow);
+$secondary-tint: var(--secondary-color-tint);
+$secondary-pastel: var(--secondary-color-pastel);
+
+$accent: var(--accent-color);
+$accent-shade: var(--accent-color-shade);
+$accent-shadow: var(--accent-color-shadow);
+$accent-tint: var(--accent-color-tint);
+$accent-pastel: var(--accent-color-pastel);
+
+$gray: var(--gray-color);
+$gray-shade: var(--gray-color-shade);
+$gray-shadow: var(--gray-color-shadow);
+$gray-tint: var(--gray-color-tint);
+$gray-pastel: var(--gray-color-pastel);
+
+$black: var(--black);
+$white: var(--white);
+
+$color_text-screen: $gray-shadow;
+$color_text-input: $gray-shade;
+$color_text-input-focus: $gray-shadow;
+$color_link: $accent; //royalblue
+$color_link-visited: $accent-shade; //purple
+$color_link-hover: $accent-shade; //midnightblue
+$color_text-main: $gray-shadow;
+
+$color_border-button: $accent-shade;
+$color_border-button-hover: $accent-shadow;
+$color_border-button-focus: $accent-pastel;
+$color_border-input: $gray;
+$color_border-abbr: $gray;

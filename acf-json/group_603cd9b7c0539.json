@@ -1,0 +1,125 @@
+{
+    "key": "group_603cd9b7c0539",
+    "title": "Block - Giant Text",
+    "fields": [
+        {
+            "key": "field_603cd9ca352a9",
+            "label": "Color Scheme",
+            "name": "scheme",
+            "type": "button_group",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "allow_null": 0,
+            "default_value": "light",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_603cddaee6707",
+            "label": "Background Width",
+            "name": "bg_width",
+            "type": "button_group",
+            "instructions": "Define if the background stretches across the site's content width or the entire screen",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full-width": "Full Width",
+                "boxed": "Boxed"
+            },
+            "allow_null": 0,
+            "default_value": "full-width",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_603cdc07352aa",
+            "label": "Block Content",
+            "name": "block_content",
+            "type": "textarea",
+            "instructions": "No tags, please.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_606b563cee459",
+            "label": "Orphan Control",
+            "name": "orphan_control",
+            "type": "true_false",
+            "instructions": "Enable this to enable the orphan auto-correct.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "On",
+            "ui_off_text": "Off"
+        },
+        {
+            "key": "field_606b5687ee45a",
+            "label": "Balance Text",
+            "name": "balance_control",
+            "type": "true_false",
+            "instructions": "Enable this to enable the text-balancing feature.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "On",
+            "ui_off_text": "Off"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/giant-text-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1617647269
+}

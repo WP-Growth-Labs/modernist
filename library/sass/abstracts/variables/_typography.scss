@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Playfair+Display&display=swap');
+
+
+// stylelint-disable value-keyword-case
+$sans-serif: 'Open Sans', sans-serif;
+$serif: 'Playfair Display', serif;
+$icon: 'Font Awesome 5 Free';
+$brand: 'Font Awesome 5 Brands';
+$code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", 'Courier', Arial, sans-serif;
+// stylelint-enable value-keyword-case
+$font_main: $sans-serif;
+$font_line-height-body: 1.5;
+$font_line-height-pre: 1.6;

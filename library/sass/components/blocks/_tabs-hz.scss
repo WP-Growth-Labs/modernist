@@ -1,0 +1,340 @@
+.wp-block,
+.entry-content {
+	
+	.block-tabs {
+		margin-bottom: 2rem;
+
+		* {
+			color: #fff;
+		}
+
+		.tabbed-area {
+			position: relative;
+
+			.tab-navigation {
+
+
+				.desktop {
+
+					.tab-nav-item {
+
+						span {
+							display: inline-block;
+							height: 100%;
+							color: #fff;
+							text-align: center;
+							line-height: 3rem;
+							position: relative;
+							cursor: pointer;
+							transition: all 0.5s;
+						}
+
+						&.active {
+
+							span {
+								font-weight: bold;
+							}
+						}
+					}
+
+
+					@include media('<tablet') {
+						display: none;
+					}
+
+				}
+
+				.mobile {
+					display: none;
+
+					@include media('<tablet') {
+						display: block;
+					}
+
+					select {
+						color: #333;
+						width: 100%;
+						padding: 0.5rem 1rem;
+
+						option {
+							color: #333;
+							width: 100%;
+							padding: 0.5rem 1rem;
+						}
+					}
+				}
+			}
+
+			.tab-panels,
+			.tab-ctas {
+
+				.tab-panel,
+				.tab-cta {
+					opacity: 0;
+					visibility: hidden;
+					top: 0;
+					display: none;
+
+					.tab-content {
+						color: #fff;
+					}
+
+					&.active {
+						display: block;
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+
+		&.block-tabs-hz {
+			background: #0177B8;
+			padding: 0 4rem;	
+
+			@include media('<tablet') {
+				padding: 1rem 1rem 0;
+			}
+
+			.tabbed-area {
+
+				.tab-navigation {
+
+					.desktop {
+						display: flex;
+						justify-content: space-around;
+
+						.tab-nav-item {
+							flex: 0 0 auto;
+							text-align: center;
+
+							span {
+								display: inline-block;
+								height: 100%;
+								color: #fff;
+								text-align: center;
+								line-height: 3rem;
+								position: relative;
+								cursor: pointer;
+								transition: all 0.5s;
+
+								&:before {
+									content: "";
+									width: 100%;
+									top: 0;
+									left: 0;
+									position: absolute;
+									height: 4px;
+									transform-origin: center;
+									transform: scaleX(0);
+									background: #fff;
+									transition: all 0.5s;
+								}
+
+								&:hover {
+
+									&:before {
+										transform: scaleX(1);
+									}
+								}
+							}
+
+							&.active {
+
+								span {
+									//font-weight: bold;
+
+									&:before {
+										transform: scaleX(1);
+									}
+								}
+							}
+						}
+
+
+						@include media('<tablet') {
+							display: none;
+						}
+					}
+				}
+
+				.tab-panels {
+
+					.tab-panel {
+						padding-top: 3rem;
+
+						@include media('<tablet') {
+							padding-top: 1rem;
+						}
+						
+						.tab-content {
+							font-size: 1.5rem;
+
+							@include media('<tablet') {
+								font-size: 1rem;
+							}
+						}
+
+						.tab-image-wrapper {
+							text-align: center;
+
+							.button {
+								margin-top: 4rem;
+
+								@include media('<tablet') {
+									margin-top: 2rem;
+								}
+							}
+						}
+					}
+				}
+			}		
+		}
+
+		&.block-tabs-vt {
+			background: #000;
+			padding: 2rem 0 0;
+
+			.content {
+				padding: 0 12rem 2rem 4rem;
+
+				h2 {
+					font-size: 3rem;
+				}
+
+				@include media('<tablet') {
+					padding: 0 2rem 2rem;
+
+					h2 {
+						font-size: 1.5rem;
+						margin: 0;
+					}
+				}
+			}
+
+			.tabbed-area {
+				display: flex;
+				flex-wrap: wrap;
+
+				@include media('<tablet') {
+					display: block;
+					padding: 0 2rem;
+				}
+
+				.tab-navigation {
+					flex: 0 25%;
+
+					.desktop {
+
+						.tab-nav-item {
+							text-align: left;
+							margin-bottom: 2rem;
+
+							span {
+								white-space: nowrap;
+								padding: 0 2rem;
+								text-align: left;
+								font-size: 1.5rem;
+								line-height: 2rem;
+
+								&:before {
+									content: "";
+									width: 4px;
+									top: 0;
+									left: 0;
+									position: absolute;
+									height: 100%;
+									transform-origin: center;
+									transform: scaleY(0);
+									background: #fff;
+									transition: all 0.5s;
+								}
+
+								&:hover {
+
+									&:before {
+										transform: scaleY(1);
+									}
+								}
+							}
+
+							&.active {
+
+								span {
+									font-weight: bold;
+
+									&:before {
+										transform: scaleY(1);
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.tab-panels {
+					flex: 1 75%;
+
+					.tab-panel {
+
+						@include media('<tablet') {
+							padding-top: 2rem;
+						}
+
+						.tab-image-wrapper {
+							text-align: center;
+
+							img {
+								margin: 0 auto;
+							}
+						}
+
+						.tab-panel-cta {
+							position: relative;
+							width: 100%;
+
+							p {
+								text-align: center;
+								color: #fff;
+							
+								.button {
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+
+				.tab-ctas {
+					flex: 1 100%;
+					width: 100%;
+
+					.tab-cta {
+
+						.tab-panel-cta {
+							position: relative;
+							width: 100%;
+							margin-top: 2rem;
+
+							p {
+								text-align: center;
+								color: #fff;
+								font-size: 1.5rem;
+
+								@include media('<tablet') {
+									margin-bottom: 0;
+								}
+
+								.button {
+									margin-bottom: 0;
+									font-size: 1rem;
+									transform: translateY(1.5rem);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
