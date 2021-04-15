@@ -105,25 +105,6 @@
 
 		<?php endif; ?>
 
-		<div id="" class="block-call-to-action light">
-
-			<div class="call-to-action-inner">
-
-				<div class="animate-in call-to-action-content">
-
-					<p><?php if( get_field( 'bottom_cta_text' ) ) : echo get_field( 'bottom_cta_text' );  else : echo 'Modernist can help you harness the power of design to transform your organization.
-'; endif; ?></p>
-
-				</div>
-
-				<div class="animate-in call-to-action-button">
-
-					<p><span>Want to start a conversation?</span> <a class="button" href="<?php bloginfo('url'); ?>/contact-us">Get In Touch</a></p>
-
-				</div>
-			</div>
-		</div>
-
 		<div id="" class="block-related">
 
 			<h3>Featured Posts</h3>
