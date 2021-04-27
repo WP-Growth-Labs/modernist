@@ -285,3 +285,29 @@ function wpgl_nav_classes( $classes, $item ) {
     return $classes;
 }
 add_filter( 'nav_menu_css_class', 'wpgl_nav_classes', 10, 2 );
+
+function wpgl_acf_image( $field, $size = 'full' ) {
+
+    if( empty( $field ) )
+        return 'Error';
+
+    if( is_array( $field ) ) {
+
+        $image_id = $field['id'];
+
+    } else {
+
+        $image_id = $field;
+    }
+
+    $url = wp_get_attachment_image_src( $field, $size );
+
+    if( file_exists( str_replace( '.jpg', '.webp', $url[0] ) ) ) {
+        $src = str_replace( '.jpg', '.webp', $url[0] );
+    } else {
+        $src = $url[0];
+    }
+
+    return $src;
+
+}

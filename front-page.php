@@ -61,7 +61,7 @@ get_header();
 			    	$service_title = get_sub_field( 'section_title' );
 			    	$service_link = get_sub_field( 'section_link' );
 			    	$service_content = get_sub_field('section_content' );
-			    	$service_image = get_sub_field( 'section_image' );
+			    	$service_image = wpgl_acf_image( get_sub_field( 'section_image' ) );
 			    	$service_overlay_color = get_sub_field( 'section_overlay_color' );
 			    	$service_overlay_opacity = get_sub_field( 'section_overlay_opacity' );
 
@@ -70,7 +70,7 @@ get_header();
 			    	<section class="service-sector <?php echo strtolower( $service_title ); ?> <?php if( $service_index === 1 ) { echo ''; }; ?>" data-panel="<?php echo strtolower( $service_title ); ?>">
 
 				    	<div class="service-sector-bg">
-							<img class="service-sector-image" src="<?php echo $service_image['url']; ?>" />
+							<img class="service-sector-image" src="<?php echo $service_image; ?>" />
 							<div class="service-sector-overlay" style="background-color: rgba(<?php echo hex_to_rgb( $service_overlay_color ) . ', ' . $service_overlay_opacity; ?>);"></div>
 						</div>
 
