@@ -4668,7 +4668,7 @@ body.block-editor-page.post-type-future main#primary header.entry-header {
     font-family: "Playfair Display", serif;
     font-size: 3rem;
     font-weight: normal;
-    color: #fff; }
+    color: #000; }
   @media (max-width: 47.9rem) {
     body.single-future main#primary header.entry-header,
     body.block-editor-page.post-type-future main#primary header.entry-header {
@@ -4721,6 +4721,21 @@ body.block-editor-page.post-type-future .block-editor-block-list__layout.is-root
   body.block-editor-page.post-type-future .block-editor-block-list__layout.is-root-container > section.wp-block-uagb-section.uagb-section__wrap:first-of-type,
   body.block-editor-page.post-type-future .block-editor-block-list__layout.is-root-container > div.wp-block-uagb-section.uagb-section__wrap:first-of-type {
     margin-top: 1.5rem; }
+body.single-future #page.dark main#primary .post-thumbnail img,
+body.block-editor-page.post-type-future #page.dark main#primary .post-thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto; }
+body.single-future #page.dark main#primary header.entry-header,
+body.block-editor-page.post-type-future #page.dark main#primary header.entry-header {
+  padding: 1rem 4rem;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both; }
+  body.single-future #page.dark main#primary header.entry-header h1.entry-title,
+  body.block-editor-page.post-type-future #page.dark main#primary header.entry-header h1.entry-title {
+    color: #fff; }
 
 body.page_futures main#primary .entry-header .page-title {
   text-align: left; }

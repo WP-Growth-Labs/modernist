@@ -20,7 +20,7 @@ body.block-editor-page.post-type-future {
 				font-family: $serif;
 				font-size: 3rem;
 				font-weight: normal;
-				color: #fff;
+				color: #000;
 			}
 
 			@include media('<tablet') {
@@ -58,6 +58,30 @@ body.block-editor-page.post-type-future {
 
 			&:first-of-type {
 				margin-top: 1.5rem;
+			}
+		}
+	}
+
+	#page.dark {
+
+		main#primary {
+
+			.post-thumbnail {
+
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			header.entry-header {
+				padding: 1rem 4rem;
+				@include outer-container(56rem);
+
+				h1.entry-title {
+					color: #fff;
+				}
 			}
 		}
 	}
